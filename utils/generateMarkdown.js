@@ -1,32 +1,26 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
-
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseBadge(license) {
+  return `![license](https://img.shields.io/badge/license-${license}-yellow.png)`
+}
 
 // TODO: Create a function to generate markdown for README
 // Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
 function generateMarkdown(data) {
-  return `
-  # ${data.title}
-  
+  return `# ${data.title}
+  ${renderLicenseBadge(data.license)}
+
   ## Description
   ${data.description}
   
   ## Table of Contents
-  1.[Description](#description)
-  2.[Installation](#visuals)
-  2.[Usage](#usage)
-  2.[License](#license)
-  2.[Contributing](#contributing)
-  2.[Tests](#tests)
-  2.[Questions](#questions)
+  1. [Description](#description)
+  2. [Installation](#visuals)
+  3. [Usage](#usage)
+  4. [License](#license)
+  5. [Contributing](#contributing)
+  6. [Tests](#tests)
+  7. [Questions](#questions)
 
   ## Installation
   ${data.installation}
@@ -45,8 +39,7 @@ function generateMarkdown(data) {
 
   ## Questions
   
-  For further questions, you can follow my public GitHub page ${data.questions[0]}, or reach me directly through email: ${data.questions[1]}.
-`;
-}
+  For further questions, you can follow my public GitHub page ${data.github}, or reach me directly through email: ${data.email}.`
+};
 
 module.exports = generateMarkdown;
