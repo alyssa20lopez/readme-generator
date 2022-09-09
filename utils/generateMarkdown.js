@@ -44,7 +44,8 @@ function generateMarkdown(data) {
   ${data.tests}
 
   ## Questions
-  ${data.questions}
+  
+  For further questions, you can follow my public GitHub page ${data.questions[0]}, or reach me directly through email: ${data.questions[1]}.
 `;
 }
 
