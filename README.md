@@ -3,7 +3,7 @@
 Module 09: Node.js
 
 ## Table of Contents
-1. [Description](#Description)
+1. [Description](#description)
 2. [Visuals](#visuals)
 
 ## Description
