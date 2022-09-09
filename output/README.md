@@ -1,8 +1,8 @@
-# dewsferger
+# ReadMe Generator
   ![license](https://img.shields.io/badge/license-ApacheLicense2.0-yellow.png)
 
   ## Description
-  rfdgetrghetrfd
+  This project will create a ReadMe based on the user's input.
   
   ## Table of Contents
   1. [Description](#description)
@@ -14,10 +14,10 @@
   7. [Questions](#questions)
 
   ## Installation
-  frdgrfgh
+  Not Applicable
 
   ## Usage
-  frgrfg
+  To start, type 'node index.js' in the command line.
 
   ## License
   ApacheLicense2.0
@@ -26,7 +26,7 @@
   Not Applicable
 
   ## Tests
-  
+  Not Applicable
 
   ## Questions
   

@@ -14,4 +14,4 @@ This is a command-line application created to dynamically generate a professiona
 ## Visuals
 Here is a visual of the front-end of the webpage design.
 
-![Alt text](./assets/images/readme-generator.png)
+![Alt text](./assets/README-Generator.png)
