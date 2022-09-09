@@ -11,11 +11,6 @@ inquirer
     },
     {
       type: 'input',
-      name: 'table of contents',
-      message: "Provide a table of contents"
-    },
-    {
-      type: 'input',
       name: 'description',
       message: "Provide a short description explaining your project."
     },
@@ -30,14 +25,31 @@ inquirer
       message: "What instruction do you have for the user to accurately use your project?"
     },
     {
-      type: 'input',
-      name: 'credits',
-      message: "Who were the collaborators on this project?"
+      type: 'list',
+      name: 'license',
+      message: "What licenses are required for this project?",
+      choice: [
+        'MIT License',
+        'GNU GPLv3',
+        'Apache License 2.0',
+        'ISC License'
+      ]
     },
     {
       type: 'input',
-      name: 'license',
-      message: "What licenses are required for this project?"
+      name: 'contribution',
+      message: "Who has contributed to this project?",
+      default: 'Not Applicable'
+    },
+    {
+      type: 'input',
+      name: 'tests',
+      message: "What were the testing procedures for this project?"
+    },
+    {
+      type: 'input',
+      name: 'questions',
+      message: "What questions would you like potential users to find solutions/make improvements to?"
     },
   ])
   .then((response) => console.log(response));
